@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn{
+    @apply inline-flex items-center justify-center h-10 px-10  rounded-md transition-colors duration-200 
+  }
+  .theme-shadow {
+    box-shadow: 0px 2px 3px 0px #ececec;
+  }
+}
+@layer utilities {
+  .quick-dark {
+    filter: invert(100%) hue-rotate(180deg);
+  }
+}
+
+
+
