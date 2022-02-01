@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   build: {
     postcss: {
       plugins: {
@@ -17,5 +18,13 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      'light', // first one will be the default theme
+      'dark',
+      'forest',
+      'synthwave'
+    ],
+  },
 }

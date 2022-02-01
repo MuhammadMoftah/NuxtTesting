@@ -1,6 +1,8 @@
 <template>
-  <section class="flex flex-wrap p-5">
-
+  <section
+    class="flex flex-wrap w-screen h-screen p-5 bg-blue-400 dark:bg-red-300"
+  >
+    <button class="btn">Test</button>
   </section>
 </template>
 
@@ -13,6 +15,9 @@ export default {
       yourValue: "0",
       test: "test",
     };
+  },
+  mounted() {
+    console.log($nuxt);
   },
   methods: {
     addNumbers() {
